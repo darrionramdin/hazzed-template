@@ -37,7 +37,8 @@ Table of Contents
 12. Blog Card
 13. Price Plan
 14. Contact Form 
-15. Media Queries - XS & SM
+15. Featherlight
+16. Media Queries - XS & SM
 
 ====================================*/
 
@@ -377,6 +378,32 @@ a:hover {
 	letter-spacing: 2px;
 }
 
+.portfolio-grid-normal a {
+	height: 350px;
+	display: block;
+	background-size: cover;
+	background-position: center center;
+	text-decoration: none;
+	color: initial;
+}
+
+.portfolio-grid-normal a .portfolio-item-info {
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: rgba(246, 246, 246, 0.8);
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+
+
+.portfolio-grid-normal a:hover .portfolio-item-info {
+	opacity: 1;
+}
+
 /*========== 12. Blog Card ==========*/
 
 .blog-card {
@@ -481,8 +508,13 @@ a:hover {
 	font-size: 12px;
 }
 
+/*========== 15. Featherlight Styles ==========*/
 
-/*========== 15. Media Queries ==========*/
+.featherlight-content {
+	background: #f6f6f6 !important;
+}
+
+/*========== 16. Media Queries ==========*/
 
 @media screen and (max-width: 991px) {
 
